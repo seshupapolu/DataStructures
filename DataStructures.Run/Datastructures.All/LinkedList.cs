@@ -23,6 +23,26 @@ namespace Datastructures.All
                 Tail = node;
             }
         }
+
+        public void AddLast(LinkedListNode<T> node)
+        {
+            if (Count == 0)
+            {
+                Head = node;
+            }
+            else
+            {
+                Tail.Next = node;
+
+            }
+            Tail = node;
+            Count++;
+        }
+
+        public void AddNext(LinkedListNode<T> node)
+        {
+            
+        }
     }
 
     public class LinkedListNode<T>
